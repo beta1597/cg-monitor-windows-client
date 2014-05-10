@@ -44,7 +44,7 @@ function exec_command($commands_set,$ip,$port){
 	
 	foreach($commands_set as $command){
 		$command_dec 	= decryptCommand($command["command"]);
-		$commands 		= explode(";", $command_dec);
+		$commands 		= explode("§", $command_dec);
 		$result			= "";
 		
 
